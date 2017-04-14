@@ -1,3 +1,5 @@
+package com.emerline.ijl01_7.utils;
+
 /**
  * Created by dzmitry.karayedau on 14-Apr-17.
  */
