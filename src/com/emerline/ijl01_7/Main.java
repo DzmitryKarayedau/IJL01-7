@@ -1,6 +1,6 @@
 package com.emerline.ijl01_7;
 
-import com.emerline.ijl01_7.utils.PolindromUtils;
+import com.emerline.ijl01_7.utils.PalindromeUtils;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -15,12 +15,11 @@ public class Main {
         try {
             System.out.print("Input number: ");
             inputNumber = in.nextLong();
-            System.out.print("Number " + inputNumber + " is ");
-            if(PolindromUtils.checkOnPolindrom(inputNumber)){
-                System.out.println("polindrom");
-            }
-            else {
-                System.out.println("not polindrom");
+            System.out.printf("Number %d is ", inputNumber);
+            if (PalindromeUtils.checkOnPalindrome(inputNumber)) {
+                System.out.println("palindrome");
+            } else {
+                System.out.println("not palindrome");
             }
         } catch (InputMismatchException e) {
             System.err.println("Wrong input data");
